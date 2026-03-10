@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\ThirdParty\Flecs.c">
+      <Filter>Source\Third Party\Flecs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\glad.c">
+      <Filter>Source\Third Party\GLAD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\implot3d\implot3d.cpp">
+      <Filter>Source\Third Party\implot3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\implot3d\implot3d_demo.cpp">
+      <Filter>Source\Third Party\implot3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\implot3d\implot3d_items.cpp">
+      <Filter>Source\Third Party\implot3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\implot3d\implot3d_meshes.cpp">
+      <Filter>Source\Third Party\implot3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imguizmo\ImGuizmo.cpp">
+      <Filter>Source\Third Party\imguizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\imgui.cpp">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\imgui_demo.cpp">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\imgui_draw.cpp">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\imgui_tables.cpp">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\imgui_widgets.cpp">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\backends\imgui_impl_sdl3.cpp">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Project\CEProject.cpp">
+      <Filter>Source\Core\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Project\ProjectSerialiser.cpp">
+      <Filter>Source\Core\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Utilities\Logger.cpp">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Utilities\Serialiser.cpp">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Utilities\Time.cpp">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\core\CoreDefinitions.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\core\Core.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Layers\InputLayer.cpp">
+      <Filter>Source\Core\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Layers\AppLayer.cpp">
+      <Filter>Source\Core\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Layers\EditorLayer.cpp">
+      <Filter>Source\Core\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Layers\GameLayer.cpp">
+      <Filter>Source\Core\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Character\CharacterModule.cpp">
+      <Filter>Source\Core\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Editor\EditorModule.cpp">
+      <Filter>Source\Core\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Layers\Layer.cpp">
+      <Filter>Source\Core\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Layers\LayerStack.cpp">
+      <Filter>Source\Core\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Math\EngineMath.cpp">
+      <Filter>Source\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Math\Gizmos.cpp">
+      <Filter>Source\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Physics\PhysicsModule.cpp">
+      <Filter>Source\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Scene\SceneSerialiser.cpp">
+      <Filter>Source\Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\Texture.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\ComputeShader.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\FrameBuffer.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\Material.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\Mesh.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\PhysicsDebugRenderer.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\RendererModule.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\SDFRenderer.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\ShaderProgram.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Platform\Win32\Application.cpp">
+      <Filter>Source\Platform\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Input\InputSystem.cpp">
+      <Filter>Source\Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Scene\LightingModule.cpp">
+      <Filter>Source\Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Scene\Camera.cpp">
+      <Filter>Source\Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Scene\CameraModule.cpp">
+      <Filter>Source\Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Layers\ImGuiLayer.cpp">
+      <Filter>Source\Core\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Layers\RenderLayer.cpp">
+      <Filter>Source\Core\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Utilities\HistoryStack.cpp">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\core\Editor\ResourceLibrary.cpp">
+      <Filter>Source\Core\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Math\GlmModule.cpp">
+      <Filter>Source\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Math\TransformModule.cpp">
+      <Filter>Source\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Character\CharacterController.cpp">
+      <Filter>Source\Core\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\cepch.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Components\CustomEvents.cpp">
+      <Filter>Source\Core\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Config\EngineDefaults.cpp">
+      <Filter>Source\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Components\GrabComponent.cpp">
+      <Filter>Source\Core\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\RopeMesh.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\ShaderStorageBuffer.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\CaribbeanModule.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\UniformBuffer.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\core\Physics\RopeModule.cpp">
+      <Filter>Source\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Editor\GrimoriumModule.cpp">
+      <Filter>Source\Core\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Utilities\STLModule.cpp">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Physics\SensorModule.cpp">
+      <Filter>Source\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui_tex_inspect\backends\tex_inspect_opengl.cpp">
+      <Filter>Source\Third Party\imgui_tex_inspect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui_tex_inspect\imgui_tex_inspect.cpp">
+      <Filter>Source\Third Party\imgui_tex_inspect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\core\Utilities\ImGuiUtilities.cpp">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\core\Physics\PhysicsCasting.cpp">
+      <Filter>Source\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Physics\ConstraintModule.cpp">
+      <Filter>Source\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\core\Physics\PhysicsShapes.cpp">
+      <Filter>Source\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Audio\AudioModule.cpp">
+      <Filter>Source\Core\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\backend\winmm\soloud_winmm.cpp">
+      <Filter>Source\Third Party\soloud20200207\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_audiosource.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_bus.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_3d.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_basicops.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_faderops.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_filterops.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_getters.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_setters.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_voicegroup.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_voiceops.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_fader.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_fft.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_fft_lut.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_file.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_filter.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_misc.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_queue.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_thread.cpp">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\audiosource\wav\dr_impl.cpp">
+      <Filter>Source\Third Party\soloud20200207\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\audiosource\wav\soloud_wav.cpp">
+      <Filter>Source\Third Party\soloud20200207\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\audiosource\wav\soloud_wavstream.cpp">
+      <Filter>Source\Third Party\soloud20200207\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\audiosource\wav\stb_vorbis.c">
+      <Filter>Source\Third Party\soloud20200207\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\log.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\platform.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\containers\string_archive.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\encode\group_varint.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\io\archive.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\io\stream.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\maths\box.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\maths\math_archive.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\maths\simd_math.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\maths\simd_math_archive.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\maths\soa_math_archive.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\memory\allocator.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\animation.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\animation_utils.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\blending_job.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\ik_aim_job.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\ik_two_bone_job.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\local_to_model_job.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\motion_blending_job.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\sampling_job.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\skeleton.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\skeleton_utils.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\track.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\track_sampling_job.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\track_triggering_job.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\offline\additive_animation_builder.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\geometry\runtime\skinning_job.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\options\options.cc">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\SkeletalMesh.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\AnimationModule.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\InteractorModule.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Physics\RagdollModule.cpp">
+      <Filter>Source\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Character\AnimationController.cpp">
+      <Filter>Source\Core\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Scene\GamemodeModule.cpp">
+      <Filter>Source\Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imguizmo\GraphEditor.cpp">
+      <Filter>Source\Third Party\imguizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imguizmo\ImCurveEdit.cpp">
+      <Filter>Source\Third Party\imguizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imguizmo\ImGradient.cpp">
+      <Filter>Source\Third Party\imguizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imguizmo\ImSequencer.cpp">
+      <Filter>Source\Third Party\imguizmo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Vendor\glad\include\KHR\khrplatform.h">
+      <Filter>Source\Third Party\GLAD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\glad\include\glad\glad.h">
+      <Filter>Source\Third Party\GLAD</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cepch.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\Flecs.h">
+      <Filter>Source\Third Party\Flecs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\stb\stb_image.h">
+      <Filter>Source\Third Party\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\implot3d\implot3d.h">
+      <Filter>Source\Third Party\implot3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\implot3d\implot3d_internal.h">
+      <Filter>Source\Third Party\implot3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imguizmo\ImGuizmo.h">
+      <Filter>Source\Third Party\imguizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui\imconfig.h">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui\imgui.h">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui\imgui_internal.h">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui\imstb_rectpack.h">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui\imstb_textedit.h">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui\imstb_truetype.h">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui\backends\imgui_impl_opengl3.h">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui\backends\imgui_impl_sdl3.h">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui\backends\imgui_impl_opengl3_loader.h">
+      <Filter>Source\Third Party\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Project\CEProject.h">
+      <Filter>Source\Core\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Project\ProjectSerialiser.h">
+      <Filter>Source\Core\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utilities\Logger.h">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utilities\Serialiser.h">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utilities\Time.h">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\core\CoreDefinitions.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\core\Core.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Layers\AppLayer.h">
+      <Filter>Source\Core\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Layers\EditorLayer.h">
+      <Filter>Source\Core\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Layers\GameLayer.h">
+      <Filter>Source\Core\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Layers\InputLayer.h">
+      <Filter>Source\Core\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Character\CharacterModule.h">
+      <Filter>Source\Core\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Editor\EditorModule.h">
+      <Filter>Source\Core\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Input\Input.h">
+      <Filter>Source\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Input\KeyCodes.h">
+      <Filter>Source\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Input\MouseCodes.h">
+      <Filter>Source\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Layers\Layer.h">
+      <Filter>Source\Core\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Layers\LayerStack.h">
+      <Filter>Source\Core\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Math\EngineMath.h">
+      <Filter>Source\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Math\Gizmos.h">
+      <Filter>Source\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Physics\PhysicsModule.h">
+      <Filter>Source\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Physics\PhysicsUserData.h">
+      <Filter>Source\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Scene\SceneSerialiser.h">
+      <Filter>Source\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\Texture.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\ComputeShader.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\FrameBuffer.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\Material.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\Mesh.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\PhysicsDebugRenderer.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\RendererModule.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\SDFRenderer.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\ShaderProgram.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\Win32\Application.h">
+      <Filter>Source\Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Input\InputSystem.h">
+      <Filter>Source\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Scene\LightingModule.h">
+      <Filter>Source\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Scene\Camera.h">
+      <Filter>Source\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Scene\CameraModule.h">
+      <Filter>Source\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Components\Components.h">
+      <Filter>Source\Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\Win32\EntryPoint.h">
+      <Filter>Source\Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Layers\ImGuiLayer.h">
+      <Filter>Source\Core\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Layers\RenderLayer.h">
+      <Filter>Source\Core\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\json.hpp">
+      <Filter>Source\Third Party\nlohmann</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utilities\HistoryStack.h">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Editor\EditorCommands.h">
+      <Filter>Source\Core\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\core\Editor\ResourceLibrary.h">
+      <Filter>Source\Core\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Math\GlmModule.h">
+      <Filter>Source\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Math\TransformModule.h">
+      <Filter>Source\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Character\CharacterController.h">
+      <Filter>Source\Core\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Components\CustomEvents.h">
+      <Filter>Source\Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\core\Physics\JoltPhysics.h">
+      <Filter>Source\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Modules.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Config\EngineDefaults.h">
+      <Filter>Source\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Components\GrabComponent.h">
+      <Filter>Source\Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\RopeMesh.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\ShaderStorageBuffer.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\CaribbeanModule.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\UniformBuffer.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\core\Physics\RopeModule.h">
+      <Filter>Source\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Editor\GrimoriumModule.h">
+      <Filter>Source\Core\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utilities\STLModule.h">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Physics\SensorModule.h">
+      <Filter>Source\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui_tex_inspect\backends\tex_inspect_opengl.h">
+      <Filter>Source\Third Party\imgui_tex_inspect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui_tex_inspect\imgui_tex_inspect_internal.h">
+      <Filter>Source\Third Party\imgui_tex_inspect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imgui_tex_inspect\imgui_tex_inspect.h">
+      <Filter>Source\Third Party\imgui_tex_inspect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\core\Utilities\ImGuiUtilities.h">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\core\Physics\PhysicsCasting.h">
+      <Filter>Source\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\core\Physics\PhysicsShapes.h">
+      <Filter>Source\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Physics\ConstraintModule.h">
+      <Filter>Source\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\core\Utilities\Random.h">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Audio\AudioAsset.h">
+      <Filter>Source\Core\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Audio\AudioModule.h">
+      <Filter>Source\Core\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\src\audiosource\wav\dr_flac.h">
+      <Filter>Source\Third Party\soloud20200207\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\src\audiosource\wav\dr_mp3.h">
+      <Filter>Source\Third Party\soloud20200207\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\src\audiosource\wav\dr_wav.h">
+      <Filter>Source\Third Party\soloud20200207\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\src\audiosource\wav\stb_vorbis.h">
+      <Filter>Source\Third Party\soloud20200207\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_audiosource.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_bassboostfilter.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_biquadresonantfilter.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_bus.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_c.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_dcremovalfilter.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_echofilter.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_error.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_fader.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_fft.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_fftfilter.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_file.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_file_hack_off.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_file_hack_on.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_filter.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_flangerfilter.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_freeverbfilter.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_internal.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_lofifilter.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_misc.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_monotone.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_noise.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_openmpt.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_queue.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_robotizefilter.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_sfxr.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_speech.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_tedsid.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_thread.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_vic.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_vizsn.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_wav.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_waveshaperfilter.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_wavstream.h">
+      <Filter>Source\Third Party\soloud20200207\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utilities\Timer.h">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\SkeletalMesh.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\ozz-animation\src\animation\runtime\animation_keyframe.h">
+      <Filter>Source\Third Party\ozz-animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\AnimationModule.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\InteractorModule.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Physics\RagdollModule.h">
+      <Filter>Source\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Character\AnimationController.h">
+      <Filter>Source\Core\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\App\Content\Shaders\common\common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\App\Content\Shaders\common\ubos.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\App\Content\Shaders\common\caribbean_buffers.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Scene\GamemodeModule.h">
+      <Filter>Source\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Character\InputComponent.h">
+      <Filter>Source\Core\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imguizmo\GraphEditor.h">
+      <Filter>Source\Third Party\imguizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imguizmo\ImCurveEdit.h">
+      <Filter>Source\Third Party\imguizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imguizmo\ImGradient.h">
+      <Filter>Source\Third Party\imguizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imguizmo\ImSequencer.h">
+      <Filter>Source\Third Party\imguizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\imguizmo\ImZoomSlider.h">
+      <Filter>Source\Third Party\imguizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utilities\Curve.h">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utilities\Gradient.h">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\App\Content\Shaders\common\postprocess_ubos.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\App\Content\Shaders\common\randgen_buffers.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Vendor\tkspline\spline.h">
+      <Filter>Source\Third Party\tkspline</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utilities\Noise.h">
+      <Filter>Source\Core\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{404cee24-1e40-443b-b5ba-efe3bc31b97f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core">
+      <UniqueIdentifier>{2f811041-ee3e-401c-8f39-e87385147227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Renderer">
+      <UniqueIdentifier>{386b41f5-92ee-427c-8616-eec6d624002a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform">
+      <UniqueIdentifier>{72fd7877-45a3-44fb-928b-45c6b02174ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Layers">
+      <UniqueIdentifier>{4e5fd52a-c4ad-44c3-9ad8-0dc5aca6557a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Utilities">
+      <UniqueIdentifier>{d15e6685-655c-4675-a9d1-208d51851f4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Scene">
+      <UniqueIdentifier>{4fd33b52-d311-480e-b968-fefd1c4aa306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Physics">
+      <UniqueIdentifier>{3b760ae6-35d3-4a15-b8c3-c6b288a7717a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Math">
+      <UniqueIdentifier>{f4627841-e2e1-4d83-be50-89bc5b8df4ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Project">
+      <UniqueIdentifier>{12d73a3f-1e6e-48c1-9eb2-69c54ed3f377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party">
+      <UniqueIdentifier>{a5c3ff1a-13d6-40ae-b819-b365837edf98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\GLAD">
+      <UniqueIdentifier>{3a01531d-d673-4a0e-815d-bf47184e05f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\Flecs">
+      <UniqueIdentifier>{e16807b3-99d8-4ddb-afb1-604001a04ed7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\imgui">
+      <UniqueIdentifier>{c04de76f-7345-43f3-8d3e-a4ec808128c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\imguizmo">
+      <UniqueIdentifier>{580c4d77-7166-4f64-b6fd-4a5be1c8a368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\implot3d">
+      <UniqueIdentifier>{3acab018-7a26-43f6-aa46-90d1e31f07b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\stb">
+      <UniqueIdentifier>{6d7479d1-0950-4617-a459-ccf34bb21feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Character">
+      <UniqueIdentifier>{65d645d1-286f-4061-9408-86864fb33887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Editor">
+      <UniqueIdentifier>{222bdc88-a77d-4f2a-8bb6-7dbb0a5ce2e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Input">
+      <UniqueIdentifier>{a07438fc-9079-4807-9c03-4f1ef422abd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform\Win32">
+      <UniqueIdentifier>{38627bba-5591-478e-a1f6-4b80f4878892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Components">
+      <UniqueIdentifier>{1c190599-89b1-434c-868f-89d51f108db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{25744f5f-793f-4c1a-920d-7296cd291359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\nlohmann">
+      <UniqueIdentifier>{ba46e49c-0a32-440b-a623-d947faf44e94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Config">
+      <UniqueIdentifier>{49e8546a-7055-4f40-aa20-1154261261cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\imgui_tex_inspect">
+      <UniqueIdentifier>{f5b5481e-1136-4092-bf8d-490fc025165f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Audio">
+      <UniqueIdentifier>{61909e10-147e-47fa-90f7-476f88fb2802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\soloud20200207">
+      <UniqueIdentifier>{e53d668d-8111-4015-ae48-9d426a532184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\soloud20200207\core">
+      <UniqueIdentifier>{16305dc7-6a28-4b27-af3a-22c2e50072fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\soloud20200207\backends">
+      <UniqueIdentifier>{ad0911e8-7a5a-4940-b9c9-b201fc84b8ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\soloud20200207\backends\NewFilter1">
+      <UniqueIdentifier>{212982c5-9a21-41f6-800a-d0fb60e73f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\ozz-animation">
+      <UniqueIdentifier>{87c2b9d6-00a3-4c0e-86a5-609301eeaba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{bf6b6336-9d3b-4318-8077-bf237bf799e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\tkspline">
+      <UniqueIdentifier>{0f046faa-636d-43e6-9c26-8113f7da624b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Third Party\FastNoise2">
+      <UniqueIdentifier>{9c983f77-b3e9-492e-bc33-2c9f3dea230f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\App\Content\Shaders\debug_line.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\debug_line.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\debug_triangle.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\debug_triangle.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\final_buffer.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\final_buffer.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\frame_buffer.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\g_buffer.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\lighting_buffer.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\mesh_geometry.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\mesh_geometry.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\mesh_lighting.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\post_process.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\shadow_depth.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\shadow_depth.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\grass_shell.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\ambient_occlusion.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\grass_shell.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\spiral_blur.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\world_geometry.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\world_geometry.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\particle_render.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\particle_compute.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\particle_render.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\particle_spawn.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\debug_buffer.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\spot_light.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\light_volume.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\mesh_depth.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\mesh_position.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\point_light.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\skeletal_geometry.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\interactors.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\back_face.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\brick_frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\cellular_automata.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\sdf_library.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\sdf_raymarch.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\SPH_compute.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\SPH_density.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\SPH_hashTable.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\SPH_pressure.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\voxel_normal.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\voxel_object.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\voxel_object.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\caribbean.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\shader_rng.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\bloom_extract.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\bloom_kawase.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\bloom_kawase_up.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\parallax_geometry.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\cloud_volume.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\bilateral_upsample.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\xray.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\xray.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\skeletal_shadow_depth.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\skeletal_shadow_depth.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\App\Content\Shaders\foliage_geometry.vert">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\Vendor\FastNoise2\bin\FastNoiseD.dll">
+      <Filter>Source\Third Party\FastNoise2</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\Vendor\FastNoise2\bin\FastNoise.dll">
+      <Filter>Source\Third Party\FastNoise2</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>

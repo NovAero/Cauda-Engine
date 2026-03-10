@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TumultuousTails", "App\TumultuousTails.vcxproj", "{AC0AB73C-DAC9-432B-8A2D-73A332DC34DB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{63E6FF85-1D28-4CB1-B0CA-1BB49B6C5BEA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL3", "Vendor\SDL-release-3.2.16\VisualC\SDL\SDL.vcxproj", "{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cauda", "Cauda", "{65742263-2055-4C0B-B9DB-765CABAF9234}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdParty", "ThirdParty", "{D5A3D424-7CC8-43AB-93F2-6C5BA94B4F48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Distribution|x64 = Distribution|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC0AB73C-DAC9-432B-8A2D-73A332DC34DB}.Debug|x64.ActiveCfg = Debug|x64
+		{AC0AB73C-DAC9-432B-8A2D-73A332DC34DB}.Debug|x64.Build.0 = Debug|x64
+		{AC0AB73C-DAC9-432B-8A2D-73A332DC34DB}.Distribution|x64.ActiveCfg = Distribution|x64
+		{AC0AB73C-DAC9-432B-8A2D-73A332DC34DB}.Distribution|x64.Build.0 = Distribution|x64
+		{AC0AB73C-DAC9-432B-8A2D-73A332DC34DB}.Release|x64.ActiveCfg = Release|x64
+		{AC0AB73C-DAC9-432B-8A2D-73A332DC34DB}.Release|x64.Build.0 = Release|x64
+		{63E6FF85-1D28-4CB1-B0CA-1BB49B6C5BEA}.Debug|x64.ActiveCfg = Debug|x64
+		{63E6FF85-1D28-4CB1-B0CA-1BB49B6C5BEA}.Debug|x64.Build.0 = Debug|x64
+		{63E6FF85-1D28-4CB1-B0CA-1BB49B6C5BEA}.Distribution|x64.ActiveCfg = Distribution|x64
+		{63E6FF85-1D28-4CB1-B0CA-1BB49B6C5BEA}.Distribution|x64.Build.0 = Distribution|x64
+		{63E6FF85-1D28-4CB1-B0CA-1BB49B6C5BEA}.Release|x64.ActiveCfg = Release|x64
+		{63E6FF85-1D28-4CB1-B0CA-1BB49B6C5BEA}.Release|x64.Build.0 = Release|x64
+		{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68}.Debug|x64.ActiveCfg = Debug|x64
+		{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68}.Debug|x64.Build.0 = Debug|x64
+		{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68}.Distribution|x64.ActiveCfg = Distribution|x64
+		{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68}.Distribution|x64.Build.0 = Distribution|x64
+		{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68}.Release|x64.ActiveCfg = Release|x64
+		{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC0AB73C-DAC9-432B-8A2D-73A332DC34DB} = {65742263-2055-4C0B-B9DB-765CABAF9234}
+		{63E6FF85-1D28-4CB1-B0CA-1BB49B6C5BEA} = {65742263-2055-4C0B-B9DB-765CABAF9234}
+		{81CE8DAF-EBB2-4761-8E45-B71ABCCA8C68} = {D5A3D424-7CC8-43AB-93F2-6C5BA94B4F48}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A3FB3C3-77AC-434F-8CD4-5047FD564625}
+	EndGlobalSection
+EndGlobal

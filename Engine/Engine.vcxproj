@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Vendor\imguizmo\GraphEditor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imguizmo\ImCurveEdit.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imguizmo\ImGradient.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imguizmo\ImGuizmo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imguizmo\ImSequencer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\backends\imgui_impl_opengl3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\backends\imgui_impl_sdl3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\imgui_demo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\imgui_tables.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui_tex_inspect\backends\tex_inspect_opengl.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\imgui_tex_inspect\imgui_tex_inspect.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\implot3d\implot3d.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\implot3d\implot3d_demo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\implot3d\implot3d_items.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\implot3d\implot3d_meshes.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\offline\additive_animation_builder.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\animation.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\animation_utils.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\blending_job.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\ik_aim_job.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\ik_two_bone_job.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\local_to_model_job.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\motion_blending_job.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\sampling_job.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\skeleton.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\skeleton_utils.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\track.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\track_sampling_job.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\animation\runtime\track_triggering_job.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\containers\string_archive.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\encode\group_varint.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\io\archive.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\io\stream.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\log.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\maths\box.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\maths\math_archive.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\maths\simd_math.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\maths\simd_math_archive.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\maths\soa_math_archive.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\memory\allocator.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\base\platform.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\geometry\runtime\skinning_job.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\ozz-animation\src\options\options.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\audiosource\wav\dr_impl.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source</AdditionalIncludeDirectories>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\audiosource\wav\soloud_wav.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source</AdditionalIncludeDirectories>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\audiosource\wav\soloud_wavstream.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source</AdditionalIncludeDirectories>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\audiosource\wav\stb_vorbis.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\backend\winmm\soloud_winmm.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_audiosource.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_bus.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_3d.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_basicops.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_faderops.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_filterops.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_getters.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_setters.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_voicegroup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_core_voiceops.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_fader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_fft.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_fft_lut.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_file.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_filter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_misc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_queue.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Vendor\soloud20200207\src\core\soloud_thread.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\cepch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Config\EngineDefaults.cpp" />
+    <ClCompile Include="Source\Core\Audio\AudioModule.cpp" />
+    <ClCompile Include="Source\Core\Character\AnimationController.cpp" />
+    <ClCompile Include="Source\Core\Character\CharacterController.cpp" />
+    <ClCompile Include="Source\Core\Character\CharacterModule.cpp" />
+    <ClCompile Include="Source\Core\Components\CustomEvents.cpp" />
+    <ClCompile Include="Source\Core\Components\GrabComponent.cpp" />
+    <ClCompile Include="Source\Core\CoreDefinitions.cpp" />
+    <ClCompile Include="Source\Core\Core.cpp" />
+    <ClCompile Include="Source\Core\Editor\EditorModule.cpp">
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Editor\GrimoriumModule.cpp" />
+    <ClCompile Include="Source\Core\Editor\ResourceLibrary.cpp" />
+    <ClCompile Include="Source\Core\Input\InputSystem.cpp" />
+    <ClCompile Include="Source\Core\Layers\AppLayer.cpp" />
+    <ClCompile Include="Source\Core\Layers\EditorLayer.cpp" />
+    <ClCompile Include="Source\Core\Layers\GameLayer.cpp" />
+    <ClCompile Include="Source\Core\Layers\ImGuiLayer.cpp" />
+    <ClCompile Include="Source\Core\Layers\InputLayer.cpp" />
+    <ClCompile Include="Source\Core\Layers\Layer.cpp" />
+    <ClCompile Include="Source\Core\Layers\LayerStack.cpp" />
+    <ClCompile Include="Source\Core\Layers\RenderLayer.cpp" />
+    <ClCompile Include="Source\Core\Math\EngineMath.cpp" />
+    <ClCompile Include="Source\Core\Math\Gizmos.cpp" />
+    <ClCompile Include="Source\Core\Math\GlmModule.cpp" />
+    <ClCompile Include="Source\Core\Math\TransformModule.cpp" />
+    <ClCompile Include="Source\Core\Physics\ConstraintModule.cpp" />
+    <ClCompile Include="Source\Core\Physics\PhysicsCasting.cpp" />
+    <ClCompile Include="Source\Core\Physics\PhysicsModule.cpp" />
+    <ClCompile Include="Source\Core\Physics\PhysicsShapes.cpp" />
+    <ClCompile Include="Source\Core\Physics\RagdollModule.cpp" />
+    <ClCompile Include="Source\Core\Physics\RopeModule.cpp" />
+    <ClCompile Include="Source\Core\Physics\SensorModule.cpp" />
+    <ClCompile Include="Source\Core\Project\CEProject.cpp" />
+    <ClCompile Include="Source\Core\Project\ProjectSerialiser.cpp" />
+    <ClCompile Include="Source\Core\Scene\Camera.cpp" />
+    <ClCompile Include="Source\Core\Scene\CameraModule.cpp" />
+    <ClCompile Include="Source\Core\Scene\GamemodeModule.cpp" />
+    <ClCompile Include="Source\Core\Scene\LightingModule.cpp" />
+    <ClCompile Include="Source\Core\Scene\SceneSerialiser.cpp" />
+    <ClCompile Include="Source\Core\Utilities\HistoryStack.cpp" />
+    <ClCompile Include="Source\Core\Utilities\ImGuiUtilities.cpp" />
+    <ClCompile Include="Source\Core\Utilities\Logger.cpp" />
+    <ClCompile Include="Source\Core\Utilities\Serialiser.cpp" />
+    <ClCompile Include="Source\Core\Utilities\STLModule.cpp" />
+    <ClCompile Include="Source\Core\Utilities\Time.cpp" />
+    <ClCompile Include="Source\Platform\Win32\Application.cpp" />
+    <ClCompile Include="Source\Renderer\AnimationModule.cpp" />
+    <ClCompile Include="Source\Renderer\ComputeShader.cpp" />
+    <ClCompile Include="Source\Renderer\FrameBuffer.cpp" />
+    <ClCompile Include="Source\Renderer\InteractorModule.cpp" />
+    <ClCompile Include="Source\Renderer\Material.cpp" />
+    <ClCompile Include="Source\Renderer\Mesh.cpp" />
+    <ClCompile Include="Source\Renderer\CaribbeanModule.cpp" />
+    <ClCompile Include="Source\Renderer\PhysicsDebugRenderer.cpp" />
+    <ClCompile Include="Source\Renderer\RendererModule.cpp" />
+    <ClCompile Include="Source\Renderer\RopeMesh.cpp" />
+    <ClCompile Include="Source\Renderer\SDFRenderer.cpp" />
+    <ClCompile Include="Source\Renderer\ShaderProgram.cpp" />
+    <ClCompile Include="Source\Renderer\ShaderStorageBuffer.cpp" />
+    <ClCompile Include="Source\Renderer\SkeletalMesh.cpp" />
+    <ClCompile Include="Source\Renderer\Texture.cpp" />
+    <ClCompile Include="Source\Renderer\UniformBuffer.cpp" />
+    <ClCompile Include="Source\ThirdParty\Flecs.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\glad.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\App\Content\Shaders\common\caribbean_buffers.h" />
+    <ClInclude Include="..\App\Content\Shaders\common\common.h" />
+    <ClInclude Include="..\App\Content\Shaders\common\postprocess_ubos.h" />
+    <ClInclude Include="..\App\Content\Shaders\common\randgen_buffers.h" />
+    <ClInclude Include="..\App\Content\Shaders\common\ubos.h" />
+    <ClInclude Include="..\Vendor\glad\include\glad\glad.h" />
+    <ClInclude Include="..\Vendor\glad\include\KHR\khrplatform.h" />
+    <ClInclude Include="..\Vendor\imguizmo\GraphEditor.h" />
+    <ClInclude Include="..\Vendor\imguizmo\ImCurveEdit.h" />
+    <ClInclude Include="..\Vendor\imguizmo\ImGradient.h" />
+    <ClInclude Include="..\Vendor\imguizmo\ImGuizmo.h" />
+    <ClInclude Include="..\Vendor\imguizmo\ImSequencer.h" />
+    <ClInclude Include="..\Vendor\imguizmo\ImZoomSlider.h" />
+    <ClInclude Include="..\Vendor\imgui\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\Vendor\imgui\backends\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="..\Vendor\imgui\backends\imgui_impl_sdl3.h" />
+    <ClInclude Include="..\Vendor\imgui\imconfig.h" />
+    <ClInclude Include="..\Vendor\imgui\imgui.h" />
+    <ClInclude Include="..\Vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="..\Vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\Vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\Vendor\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\Vendor\imgui_tex_inspect\backends\tex_inspect_opengl.h" />
+    <ClInclude Include="..\Vendor\imgui_tex_inspect\imgui_tex_inspect.h" />
+    <ClInclude Include="..\Vendor\imgui_tex_inspect\imgui_tex_inspect_internal.h" />
+    <ClInclude Include="..\Vendor\implot3d\implot3d.h" />
+    <ClInclude Include="..\Vendor\implot3d\implot3d_internal.h" />
+    <ClInclude Include="..\Vendor\ozz-animation\src\animation\runtime\animation_keyframe.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_audiosource.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_bassboostfilter.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_biquadresonantfilter.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_bus.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_c.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_dcremovalfilter.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_echofilter.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_error.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_fader.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_fft.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_fftfilter.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_file.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_file_hack_off.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_file_hack_on.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_filter.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_flangerfilter.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_freeverbfilter.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_internal.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_lofifilter.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_misc.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_monotone.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_noise.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_openmpt.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_queue.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_robotizefilter.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_sfxr.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_speech.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_tedsid.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_thread.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_vic.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_vizsn.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_wav.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_waveshaperfilter.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\include\soloud_wavstream.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\src\audiosource\wav\dr_flac.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\src\audiosource\wav\dr_mp3.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\src\audiosource\wav\dr_wav.h" />
+    <ClInclude Include="..\Vendor\soloud20200207\src\audiosource\wav\stb_vorbis.h" />
+    <ClInclude Include="..\Vendor\stb\stb_image.h" />
+    <ClInclude Include="..\Vendor\tkspline\spline.h" />
+    <ClInclude Include="Source\Config\EngineDefaults.h" />
+    <ClInclude Include="Source\Core\Audio\AudioAsset.h" />
+    <ClInclude Include="Source\Core\Audio\AudioModule.h" />
+    <ClInclude Include="Source\Core\Character\AnimationController.h" />
+    <ClInclude Include="Source\Core\Character\CharacterController.h" />
+    <ClInclude Include="Source\Core\Character\CharacterModule.h" />
+    <ClInclude Include="Source\Core\Character\InputComponent.h" />
+    <ClInclude Include="Source\Core\Components\Components.h" />
+    <ClInclude Include="Source\Core\Components\CustomEvents.h" />
+    <ClInclude Include="Source\Core\Components\GrabComponent.h" />
+    <ClInclude Include="Source\Core\CoreDefinitions.h" />
+    <ClInclude Include="Source\Core\Core.h" />
+    <ClInclude Include="Source\Core\Editor\EditorCommands.h" />
+    <ClInclude Include="Source\Core\Editor\EditorModule.h" />
+    <ClInclude Include="Source\Core\Editor\GrimoriumModule.h" />
+    <ClInclude Include="Source\Core\Editor\ResourceLibrary.h" />
+    <ClInclude Include="Source\Core\Input\Input.h" />
+    <ClInclude Include="Source\Core\Input\InputSystem.h" />
+    <ClInclude Include="Source\Core\Input\KeyCodes.h" />
+    <ClInclude Include="Source\Core\Input\MouseCodes.h" />
+    <ClInclude Include="Source\Core\Layers\AppLayer.h" />
+    <ClInclude Include="Source\Core\Layers\EditorLayer.h" />
+    <ClInclude Include="Source\Core\Layers\GameLayer.h" />
+    <ClInclude Include="Source\Core\Layers\ImGuiLayer.h" />
+    <ClInclude Include="Source\Core\Layers\InputLayer.h" />
+    <ClInclude Include="Source\Core\Layers\Layer.h" />
+    <ClInclude Include="Source\Core\Layers\LayerStack.h" />
+    <ClInclude Include="Source\Core\Layers\RenderLayer.h" />
+    <ClInclude Include="Source\Core\Math\EngineMath.h" />
+    <ClInclude Include="Source\Core\Math\Gizmos.h" />
+    <ClInclude Include="Source\Core\Math\GlmModule.h" />
+    <ClInclude Include="Source\Core\Math\TransformModule.h" />
+    <ClInclude Include="Source\Core\Modules.h" />
+    <ClInclude Include="Source\Core\Physics\ConstraintModule.h" />
+    <ClInclude Include="Source\Core\Physics\JoltPhysics.h" />
+    <ClInclude Include="Source\Core\Physics\PhysicsModule.h" />
+    <ClInclude Include="Source\Core\Physics\PhysicsCasting.h" />
+    <ClInclude Include="Source\Core\Physics\PhysicsShapes.h" />
+    <ClInclude Include="Source\Core\Physics\PhysicsUserData.h" />
+    <ClInclude Include="Source\Core\Physics\RagdollModule.h" />
+    <ClInclude Include="Source\Core\Physics\RopeModule.h" />
+    <ClInclude Include="Source\Core\Physics\SensorModule.h" />
+    <ClInclude Include="Source\Core\Project\CEProject.h" />
+    <ClInclude Include="Source\Core\Project\ProjectSerialiser.h" />
+    <ClInclude Include="Source\Core\Scene\Camera.h" />
+    <ClInclude Include="Source\Core\Scene\CameraModule.h" />
+    <ClInclude Include="Source\Core\Scene\GamemodeModule.h" />
+    <ClInclude Include="Source\Core\Scene\LightingModule.h" />
+    <ClInclude Include="Source\Core\Scene\SceneSerialiser.h" />
+    <ClInclude Include="Source\Core\Utilities\Curve.h" />
+    <ClInclude Include="Source\Core\Utilities\Gradient.h" />
+    <ClInclude Include="Source\Core\Utilities\HistoryStack.h" />
+    <ClInclude Include="Source\Core\Utilities\ImGuiUtilities.h" />
+    <ClInclude Include="Source\Core\Utilities\Logger.h" />
+    <ClInclude Include="Source\Core\Utilities\Noise.h" />
+    <ClInclude Include="Source\Core\Utilities\Random.h" />
+    <ClInclude Include="Source\Core\Utilities\Serialiser.h" />
+    <ClInclude Include="Source\Core\Utilities\STLModule.h" />
+    <ClInclude Include="Source\Core\Utilities\Time.h" />
+    <ClInclude Include="Source\cepch.h" />
+    <ClInclude Include="Source\Core\Utilities\Timer.h" />
+    <ClInclude Include="Source\Platform\Win32\Application.h" />
+    <ClInclude Include="Source\Platform\Win32\EntryPoint.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\AnimationModule.h" />
+    <ClInclude Include="Source\Renderer\ComputeShader.h" />
+    <ClInclude Include="Source\Renderer\FrameBuffer.h" />
+    <ClInclude Include="Source\Renderer\Material.h" />
+    <ClInclude Include="Source\Renderer\Mesh.h" />
+    <ClInclude Include="Source\Renderer\CaribbeanModule.h" />
+    <ClInclude Include="Source\Renderer\PhysicsDebugRenderer.h" />
+    <ClInclude Include="Source\Renderer\RendererModule.h" />
+    <ClInclude Include="Source\Renderer\RopeMesh.h" />
+    <ClInclude Include="Source\Renderer\SDFRenderer.h" />
+    <ClInclude Include="Source\Renderer\ShaderProgram.h" />
+    <ClInclude Include="Source\Renderer\ShaderStorageBuffer.h" />
+    <ClInclude Include="Source\Renderer\SkeletalMesh.h" />
+    <ClInclude Include="Source\Renderer\Texture.h" />
+    <ClInclude Include="Source\Renderer\UniformBuffer.h" />
+    <ClInclude Include="Source\Renderer\InteractorModule.h" />
+    <ClInclude Include="Source\ThirdParty\Flecs.h" />
+    <ClInclude Include="Source\ThirdParty\json.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\App\Content\Shaders\ambient_occlusion.frag" />
+    <None Include="..\App\Content\Shaders\back_face.frag" />
+    <None Include="..\App\Content\Shaders\bilateral_upsample.frag" />
+    <None Include="..\App\Content\Shaders\bloom_extract.frag" />
+    <None Include="..\App\Content\Shaders\bloom_kawase.frag" />
+    <None Include="..\App\Content\Shaders\bloom_kawase_up.frag" />
+    <None Include="..\App\Content\Shaders\brick_frag.glsl" />
+    <None Include="..\App\Content\Shaders\caribbean.glsl" />
+    <None Include="..\App\Content\Shaders\cellular_automata.glsl" />
+    <None Include="..\App\Content\Shaders\cloud_volume.frag" />
+    <None Include="..\App\Content\Shaders\debug_buffer.frag" />
+    <None Include="..\App\Content\Shaders\debug_line.frag" />
+    <None Include="..\App\Content\Shaders\debug_line.vert" />
+    <None Include="..\App\Content\Shaders\debug_triangle.frag" />
+    <None Include="..\App\Content\Shaders\debug_triangle.vert" />
+    <None Include="..\App\Content\Shaders\final_buffer.frag" />
+    <None Include="..\App\Content\Shaders\final_buffer.vert" />
+    <None Include="..\App\Content\Shaders\foliage_geometry.vert" />
+    <None Include="..\App\Content\Shaders\frame_buffer.vert" />
+    <None Include="..\App\Content\Shaders\grass_shell.frag" />
+    <None Include="..\App\Content\Shaders\grass_shell.vert" />
+    <None Include="..\App\Content\Shaders\g_buffer.vert" />
+    <None Include="..\App\Content\Shaders\interactors.glsl" />
+    <None Include="..\App\Content\Shaders\lighting_buffer.frag" />
+    <None Include="..\App\Content\Shaders\light_volume.vert" />
+    <None Include="..\App\Content\Shaders\mesh_depth.vert" />
+    <None Include="..\App\Content\Shaders\mesh_geometry.frag" />
+    <None Include="..\App\Content\Shaders\mesh_geometry.vert" />
+    <None Include="..\App\Content\Shaders\mesh_lighting.frag" />
+    <None Include="..\App\Content\Shaders\mesh_position.frag" />
+    <None Include="..\App\Content\Shaders\parallax_geometry.vert" />
+    <None Include="..\App\Content\Shaders\particle_compute.glsl" />
+    <None Include="..\App\Content\Shaders\particle_render.frag" />
+    <None Include="..\App\Content\Shaders\particle_render.vert" />
+    <None Include="..\App\Content\Shaders\particle_spawn.glsl" />
+    <None Include="..\App\Content\Shaders\point_light.frag" />
+    <None Include="..\App\Content\Shaders\post_process.frag" />
+    <None Include="..\App\Content\Shaders\sdf_library.glsl" />
+    <None Include="..\App\Content\Shaders\sdf_raymarch.frag" />
+    <None Include="..\App\Content\Shaders\shader_rng.glsl" />
+    <None Include="..\App\Content\Shaders\shadow_depth.frag" />
+    <None Include="..\App\Content\Shaders\shadow_depth.vert" />
+    <None Include="..\App\Content\Shaders\skeletal_geometry.vert" />
+    <None Include="..\App\Content\Shaders\skeletal_shadow_depth.frag" />
+    <None Include="..\App\Content\Shaders\skeletal_shadow_depth.vert" />
+    <None Include="..\App\Content\Shaders\SPH_compute.glsl" />
+    <None Include="..\App\Content\Shaders\SPH_density.glsl" />
+    <None Include="..\App\Content\Shaders\SPH_hashTable.glsl" />
+    <None Include="..\App\Content\Shaders\SPH_pressure.glsl" />
+    <None Include="..\App\Content\Shaders\spiral_blur.frag" />
+    <None Include="..\App\Content\Shaders\spot_light.frag" />
+    <None Include="..\App\Content\Shaders\voxel_normal.glsl" />
+    <None Include="..\App\Content\Shaders\voxel_object.frag" />
+    <None Include="..\App\Content\Shaders\voxel_object.vert" />
+    <None Include="..\App\Content\Shaders\world_geometry.frag" />
+    <None Include="..\App\Content\Shaders\world_geometry.vert" />
+    <None Include="..\App\Content\Shaders\xray.frag" />
+    <None Include="..\App\Content\Shaders\xray.vert" />
+    <CopyFileToFolders Include="..\Vendor\FastNoise2\bin\FastNoise.dll">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\Vendor\FastNoise2\bin\FastNoiseD.dll">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{63e6ff85-1d28-4cb1-b0ca-1bb49b6c5bea}</ProjectGuid>
+    <RootNamespace>EngineBase</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <SourcePath>$(VC_SourcePath);$(SourcePath)</SourcePath>
+    <OutDir>$(SolutionDir)Binaries\Build\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>caudaeng_d</TargetName>
+    <LibraryPath>$(SolutionDir)Vendor\lib;$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>$(SolutionDir)App\Content\Shaders;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <SourcePath>$(VC_SourcePath);$(SourcePath)</SourcePath>
+    <OutDir>$(SolutionDir)Binaries\Build\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>caudaeng</TargetName>
+    <LibraryPath>$(SolutionDir)Vendor\lib;$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>$(SolutionDir)App\Content\Shaders;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <SourcePath>$(VC_SourcePath);$(SourcePath)</SourcePath>
+    <OutDir>$(SolutionDir)Binaries\Build\$(Configuration)\Engine\Cauda\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>caudaeng</TargetName>
+    <LibraryPath>$(SolutionDir)Vendor\lib;$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>$(SolutionDir)App\Content\Shaders;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;OZZ_BUILD_SHARED=0;_COMPILING_CPU</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)Vendor\FastNoise2\include;$(SolutionDir)Vendor\tkspline;$(SolutionDir)Vendor\moodycamel;$(SolutionDir)Vendor\ozz-animation\src;$(SolutionDir)Vendor\ozz-animation\include;$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source;$(SolutionDir)App;$(SolutionDir)App\Content\Shaders</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>cepch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>jolt.lib;opengl32.lib;assimp-vc143-mt.lib;FastNoiseD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Vendor\FastNoise2\lib;$(SolutionDir)Vendor\JoltPhysics\Build\Debug;$(SolutionDir)Vendor\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;OZZ_BUILD_SHARED=0;_COMPILING_CPU</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)Vendor\FastNoise2\include;$(SolutionDir)Vendor\tkspline;$(SolutionDir)Vendor\moodycamel;$(SolutionDir)Vendor\ozz-animation\src;$(SolutionDir)Vendor\ozz-animation\include;$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source;$(SolutionDir)App;$(SolutionDir)App\Content\Shaders</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>cepch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>jolt.lib;opengl32.lib;assimp-vc143-mt.lib;FastNoise.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Vendor\FastNoise2\lib;$(SolutionDir)Vendor\JoltPhysics\Build\Release;$(SolutionDir)Vendor\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>false</LinkTimeCodeGeneration>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_DISTRIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;OZZ_BUILD_SHARED=0;_COMPILING_CPU</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)Vendor\FastNoise2\include;$(SolutionDir)Vendor\tkspline;$(SolutionDir)Vendor\moodycamel;$(SolutionDir)Vendor\ozz-animation\src;$(SolutionDir)Vendor\ozz-animation\include;$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)Vendor\imgui_tex_inspect\backends;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)Engine\Source;$(SolutionDir)App;$(SolutionDir)App\Content\Shaders</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>cepch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>jolt.lib;opengl32.lib;assimp-vc143-mt.lib;FastNoise.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Vendor\FastNoise2\lib;$(SolutionDir)Vendor\JoltPhysics\Build\Release;$(SolutionDir)Vendor\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

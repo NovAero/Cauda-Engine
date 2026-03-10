@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Grimoires">
+      <UniqueIdentifier>{31653095-335c-4652-ae90-50b3adb34bb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{c622ea4d-497a-45dd-9574-9f646eeafff6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Engine\Source\ThirdParty\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CaudaApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grimorium.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UI\MainMenu.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UI\GameMenu.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UI\EndGameScreen.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\CaudaApp.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grimorium.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\CannonScript.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\ExampleScript.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\GiantPowerup.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\JumpBoost.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\KillVolumeScript.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\LogScript.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\LogScriptKinematic.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\LootSpawner.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\MovingPlatform.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\PlayerBehaviour.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\Powerup.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\Projectile.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\Rotator.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\SpeedBoost.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\Stamina.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\TestScript.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\WorldMouse.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UI\MainMenu.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\GravityWell.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\DiegeticButton.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UI\GameMenu.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\ChickenBehaviour.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\BumperBehaviour.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\PlayerScoring.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\FallingTileBehaviour.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\ProjectileLauncher.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\Attractor.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\AimAssist.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\AimTarget.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\Dash.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\AmmoPickup.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\HitFX.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\Health.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\SafeZone.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\CameraTarget.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\LootElevator.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UI\EndGameScreen.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\ParticleModulator.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\RunningSmoke.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\BreakableObject.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\IntroCutscene.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\Explosive.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\DashFX.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Grimoires\DeathFX.h">
+      <Filter>Grimoires</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

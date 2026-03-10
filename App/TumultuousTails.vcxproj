@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ac0ab73c-dac9-432b-8a2d-73a332dc34db}</ProjectGuid>
+    <RootNamespace>AppBase</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>TumultuousTails</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Binaries\Build\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>CaudaApp_D</TargetName>
+    <LibraryPath>$(SolutionDir)Vendor\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Binaries\Build\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>CaudaApp</TargetName>
+    <LibraryPath>$(SolutionDir)Vendor\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
+    <OutDir>$(SolutionDir)Binaries\Build\$(Configuration)\Binaries\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>Tumult1.0.8</TargetName>
+    <LibraryPath>$(SolutionDir)Vendor\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_COMPILING_CPU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)Vendor\FastNoise2\include;$(SolutionDir)Vendor\FastNoise2\include;$(SolutionDir)Vendor\tkspline;$(SolutionDir)Vendor\moodycamel;$(SolutionDir)Vendor\ozz-animation\src;$(SolutionDir)Vendor\ozz-animation\include;$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)App;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp\include;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Engine\Source;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)App\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>flecs.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_COMPILING_CPU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)Vendor\tkspline;$(SolutionDir)Vendor\moodycamel;$(SolutionDir)Vendor\ozz-animation\src;$(SolutionDir)Vendor\ozz-animation\include;$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)App;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp\include;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Engine\Source;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)App\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>flecs.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_DISTRIB;_COMPILING_CPU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)Vendor\FastNoise2\include;$(SolutionDir)Vendor\tkspline;$(SolutionDir)Vendor\moodycamel;$(SolutionDir)Vendor\ozz-animation\src;$(SolutionDir)Vendor\ozz-animation\include;$(SolutionDir)Vendor\soloud20200207\src\core;$(SolutionDir)Vendor\soloud20200207\include;$(SolutionDir)App;$(SolutionDir)Vendor\stb;$(SolutionDir)Vendor\implot3d;$(SolutionDir)Vendor\imgui\backends;$(SolutionDir)Vendor\imgui;$(SolutionDir)Vendor\imgui_tex_inspect;$(SolutionDir)Vendor\imguizmo;$(SolutionDir)Vendor\JoltPhysics\Jolt;$(SolutionDir)Vendor\JoltPhysics;$(SolutionDir)Vendor\assimp\include;$(SolutionDir)Vendor\glad\include;$(SolutionDir)Engine\Source;$(SolutionDir)Vendor\SDL-release-3.2.16\include;$(SolutionDir)Vendor\GLM;$(SolutionDir)App\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ModuleOutputFile>$(IntDir)</ModuleOutputFile>
+      <ModuleDependenciesFile>$(IntDir)</ModuleDependenciesFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <SourceDependenciesFile>$(IntDir)</SourceDependenciesFile>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>flecs.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Engine\Source\ThirdParty\glad.c" />
+    <ClCompile Include="Source\CaudaApp.cpp" />
+    <ClCompile Include="Source\Grimorium.cpp" />
+    <ClCompile Include="Source\UI\EndGameScreen.cpp" />
+    <ClCompile Include="Source\UI\GameMenu.cpp" />
+    <ClCompile Include="Source\UI\MainMenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
+      <Project>{63e6ff85-1d28-4cb1-b0ca-1bb49b6c5bea}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Vendor\SDL-release-3.2.16\VisualC\SDL\SDL.vcxproj">
+      <Project>{81ce8daf-ebb2-4761-8e45-b71abcca8c68}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Content\Grimoires\AimAssist.h" />
+    <ClInclude Include="Content\Grimoires\AimTarget.h" />
+    <ClInclude Include="Content\Grimoires\AmmoPickup.h" />
+    <ClInclude Include="Content\Grimoires\Attractor.h" />
+    <ClInclude Include="Content\Grimoires\BreakableObject.h" />
+    <ClInclude Include="Content\Grimoires\BumperBehaviour.h" />
+    <ClInclude Include="Content\Grimoires\CameraTarget.h" />
+    <ClInclude Include="Content\Grimoires\CannonScript.h" />
+    <ClInclude Include="Content\Grimoires\ChickenBehaviour.h" />
+    <ClInclude Include="Content\Grimoires\Dash.h" />
+    <ClInclude Include="Content\Grimoires\DashFX.h" />
+    <ClInclude Include="Content\Grimoires\DeathFX.h" />
+    <ClInclude Include="Content\Grimoires\DiegeticButton.h" />
+    <ClInclude Include="Content\Grimoires\ExampleScript.h" />
+    <ClInclude Include="Content\Grimoires\Explosive.h" />
+    <ClInclude Include="Content\Grimoires\FallingTileBehaviour.h" />
+    <ClInclude Include="Content\Grimoires\GiantPowerup.h" />
+    <ClInclude Include="Content\Grimoires\GravityWell.h" />
+    <ClInclude Include="Content\Grimoires\Health.h" />
+    <ClInclude Include="Content\Grimoires\HitFX.h" />
+    <ClInclude Include="Content\Grimoires\IntroCutscene.h" />
+    <ClInclude Include="Content\Grimoires\JumpBoost.h" />
+    <ClInclude Include="Content\Grimoires\KillVolumeScript.h" />
+    <ClInclude Include="Content\Grimoires\LogScript.h" />
+    <ClInclude Include="Content\Grimoires\LogScriptKinematic.h" />
+    <ClInclude Include="Content\Grimoires\LootElevator.h" />
+    <ClInclude Include="Content\Grimoires\LootSpawner.h" />
+    <ClInclude Include="Content\Grimoires\MovingPlatform.h" />
+    <ClInclude Include="Content\Grimoires\ParticleModulator.h" />
+    <ClInclude Include="Content\Grimoires\PlayerBehaviour.h" />
+    <ClInclude Include="Content\Grimoires\PlayerScoring.h" />
+    <ClInclude Include="Content\Grimoires\Powerup.h" />
+    <ClInclude Include="Content\Grimoires\Projectile.h" />
+    <ClInclude Include="Content\Grimoires\ProjectileLauncher.h" />
+    <ClInclude Include="Content\Grimoires\Rotator.h" />
+    <ClInclude Include="Content\Grimoires\RunningSmoke.h" />
+    <ClInclude Include="Content\Grimoires\SafeZone.h" />
+    <ClInclude Include="Content\Grimoires\SpeedBoost.h" />
+    <ClInclude Include="Content\Grimoires\Stamina.h" />
+    <ClInclude Include="Content\Grimoires\TestScript.h" />
+    <ClInclude Include="Content\Grimoires\WorldMouse.h" />
+    <ClInclude Include="Source\CaudaApp.h" />
+    <ClInclude Include="Source\Grimorium.h" />
+    <ClInclude Include="Source\UI\EndGameScreen.h" />
+    <ClInclude Include="Source\UI\GameMenu.h" />
+    <ClInclude Include="Source\UI\MainMenu.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
