@@ -5,6 +5,6 @@
 </header>
 <body>
   <p>
-    DISCLAIMER: This repo is not intended to be built, and will not run correctly without the right content files. This is a reference only repo for showcasing purposes
+    DISCLAIMER: This repo is not intended to be built, and may not run correctly/cause crashes without the right content files. This is a reference only repo for showcasing purposes
   </p>  
 </body>
